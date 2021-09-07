@@ -6,11 +6,11 @@
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("jquery"), require("tui-code-snippet"), (function webpackLoadOptionalExternalModule() { try { return require("tui-editor"); } catch(e) {} }()), (function webpackLoadOptionalExternalModule() { try { return require("tui-editor/dist/tui-editor-Viewer"); } catch(e) {} }()));
+		module.exports = factory(require("jquery"), require("tui-code-snippet"), (function webpackLoadOptionalExternalModule() { try { return require("tui-editor2"); } catch(e) {} }()), (function webpackLoadOptionalExternalModule() { try { return require("tui-editor2/dist/tui-editor-Viewer"); } catch(e) {} }()));
 	else if(typeof define === 'function' && define.amd)
-		define(["jquery", "tui-code-snippet", "tui-editor", "tui-editor/dist/tui-editor-Viewer"], factory);
+		define(["jquery", "tui-code-snippet", "tui-editor2", "tui-editor2/dist/tui-editor-Viewer"], factory);
 	else {
-		var a = typeof exports === 'object' ? factory(require("jquery"), require("tui-code-snippet"), (function webpackLoadOptionalExternalModule() { try { return require("tui-editor"); } catch(e) {} }()), (function webpackLoadOptionalExternalModule() { try { return require("tui-editor/dist/tui-editor-Viewer"); } catch(e) {} }())) : factory(root["$"], root["tui"]["util"], root["tui"]["Editor"], root["tui"]["Editor"]);
+		var a = typeof exports === 'object' ? factory(require("jquery"), require("tui-code-snippet"), (function webpackLoadOptionalExternalModule() { try { return require("tui-editor2"); } catch(e) {} }()), (function webpackLoadOptionalExternalModule() { try { return require("tui-editor2/dist/tui-editor-Viewer"); } catch(e) {} }())) : factory(root["$"], root["tui"]["util"], root["tui"]["Editor"], root["tui"]["Editor"]);
 		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
 	}
 })(window, function(__WEBPACK_EXTERNAL_MODULE__0__, __WEBPACK_EXTERNAL_MODULE__2__, __WEBPACK_EXTERNAL_MODULE__4__, __WEBPACK_EXTERNAL_MODULE__5__) {

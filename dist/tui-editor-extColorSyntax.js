@@ -6,11 +6,11 @@
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("jquery"), (function webpackLoadOptionalExternalModule() { try { return require("tui-editor"); } catch(e) {} }()), (function webpackLoadOptionalExternalModule() { try { return require("tui-editor/dist/tui-editor-Viewer"); } catch(e) {} }()), require("tui-color-picker"));
+		module.exports = factory(require("jquery"), (function webpackLoadOptionalExternalModule() { try { return require("tui-editor2"); } catch(e) {} }()), (function webpackLoadOptionalExternalModule() { try { return require("tui-editor2/dist/tui-editor-Viewer"); } catch(e) {} }()), require("tui-color-picker"));
 	else if(typeof define === 'function' && define.amd)
-		define(["jquery", "tui-editor", "tui-editor/dist/tui-editor-Viewer", "tui-color-picker"], factory);
+		define(["jquery", "tui-editor2", "tui-editor2/dist/tui-editor-Viewer", "tui-color-picker"], factory);
 	else {
-		var a = typeof exports === 'object' ? factory(require("jquery"), (function webpackLoadOptionalExternalModule() { try { return require("tui-editor"); } catch(e) {} }()), (function webpackLoadOptionalExternalModule() { try { return require("tui-editor/dist/tui-editor-Viewer"); } catch(e) {} }()), require("tui-color-picker")) : factory(root["$"], root["tui"]["Editor"], root["tui"]["Editor"], root["tui"]["colorPicker"]);
+		var a = typeof exports === 'object' ? factory(require("jquery"), (function webpackLoadOptionalExternalModule() { try { return require("tui-editor2"); } catch(e) {} }()), (function webpackLoadOptionalExternalModule() { try { return require("tui-editor2/dist/tui-editor-Viewer"); } catch(e) {} }()), require("tui-color-picker")) : factory(root["$"], root["tui"]["Editor"], root["tui"]["Editor"], root["tui"]["colorPicker"]);
 		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
 	}
 })(window, function(__WEBPACK_EXTERNAL_MODULE__0__, __WEBPACK_EXTERNAL_MODULE__4__, __WEBPACK_EXTERNAL_MODULE__5__, __WEBPACK_EXTERNAL_MODULE__46__) {
