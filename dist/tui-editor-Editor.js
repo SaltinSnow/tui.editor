@@ -6,11 +6,11 @@
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("jquery"), require("tui-code-snippet"), require("codemirror"), require("to-mark"), require("markdown-it"), require("highlight.js"), require("squire-rte"));
+		module.exports = factory(require("jquery"), require("tui-code-snippet"), require("codemirror"), require("to-mark"), require("markdown-it"), require("highlight.js"), require("squire-rte2"));
 	else if(typeof define === 'function' && define.amd)
-		define(["jquery", "tui-code-snippet", "codemirror", "to-mark", "markdown-it", "highlight.js", "squire-rte"], factory);
+		define(["jquery", "tui-code-snippet", "codemirror", "to-mark", "markdown-it", "highlight.js", "squire-rte2"], factory);
 	else if(typeof exports === 'object')
-		exports["Editor"] = factory(require("jquery"), require("tui-code-snippet"), require("codemirror"), require("to-mark"), require("markdown-it"), require("highlight.js"), require("squire-rte"));
+		exports["Editor"] = factory(require("jquery"), require("tui-code-snippet"), require("codemirror"), require("to-mark"), require("markdown-it"), require("highlight.js"), require("squire-rte2"));
 	else
 		root["tui"] = root["tui"] || {}, root["tui"]["Editor"] = factory(root["$"], root["tui"]["util"], root["CodeMirror"], root["toMark"], root["markdownit"], root["hljs"], root["Squire"]);
 })(window, function(__WEBPACK_EXTERNAL_MODULE__0__, __WEBPACK_EXTERNAL_MODULE__1__, __WEBPACK_EXTERNAL_MODULE__6__, __WEBPACK_EXTERNAL_MODULE__18__, __WEBPACK_EXTERNAL_MODULE__23__, __WEBPACK_EXTERNAL_MODULE__32__, __WEBPACK_EXTERNAL_MODULE__67__) {
